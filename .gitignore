@@ -1,0 +1,24 @@
+# Binary
+dallbot
+
+# Object Files
+.o
+.obj
+
+# Libraries
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Dub
+.dub/
+__test__*__
+
+
+# Documentation Artifacts
+docs.json
+__dummy.html
+docs/*
+
