@@ -211,7 +211,7 @@ class Bot {
     void normalize()
     {
         if (!username)
-            username = nickname;
+            username = getUser();
 
         if (!realname)
             realname = nickname;
