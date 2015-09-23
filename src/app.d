@@ -235,10 +235,10 @@ class Bot {
         if (message["command"] == "PING")
             return handlePing(res);
 
-        if (message["command"] == "PRIVMSG" && params["channel"])
+        if (message["command"] == "PRIVMSG" && !params["channel"].empty)
             return handleChannel(res);
 
-        if (message["command"] == "PRIVMSG" && params["nickname"] == nickname)
+        if (message["command"] == "PRIVMSG" && params["nickname"] == nickname) 
             return handlePrivate(res);
 
         return false;
@@ -272,6 +272,16 @@ class Bot {
 
     private bool handlePrivate(ref Response res)
     {
+        res.command = "PRIVMSG";
+        res.params ~= message["nickname"];
+        immutable input = message["trailing"];
+
+        if (input.startsWith(prefix))
+            return handleCommand(res);
+
+        if (input.startsWith(nickname))
+            return handleBeckon(res);
+
         return false;
     }
 
