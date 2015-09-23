@@ -1,0 +1,40 @@
+{
+    "profiles": [
+        {
+            "server": "irc.freenode.net",
+            "port": 6667,
+            "channels": [ "##xampp" ],
+            "nickname": "dallbot",
+            "username": "dallbot",
+            "prefix": "!d",
+            "autojoin": true
+        },
+        {
+            "server": "irc.freenode.net",
+            "port": 6667,
+            "channels": [ "##xampp" ],
+            "nickname": "dallbot2",
+            "username": "dallbot2",
+            "prefix": "!d",
+            "autojoin": true
+        },
+        {
+            "server": "irc.freenode.net",
+            "port": 6667,
+            "channels": [ "##xampp" ],
+            "nickname": "dallbot3",
+            "username": "dallbot3",
+            "prefix": "!d",
+            "autojoin": true
+        },
+        {
+            "server": "irc.freenode.net",
+            "port": 6667,
+            "channels": [ "##xampp" ],
+            "nickname": "dallbot4",
+            "username": "dallbot4",
+            "prefix": "!d",
+            "autojoin": true
+        },
+    ]
+}

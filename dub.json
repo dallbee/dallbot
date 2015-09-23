@@ -1,0 +1,10 @@
+{
+	"name": "dallbot",
+	"description": "A simple vibe.d server application.",
+	"copyright": "Copyright © 2015, dylan",
+	"authors": ["dylan"],
+	"dependencies": {
+		"vibe-d": "~>0.7.23"
+	},
+	"versions": ["VibeCustomMain"]
+}
